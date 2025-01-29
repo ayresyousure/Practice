@@ -1,12 +1,10 @@
-values = input().split(' ')
+A, B, C = map(float, input().split())
 
-X, Y, Z = map(int, values)
+if A + B > C and A + C > B and B + C > A:
+    perimeter = A + B + C
+    print(f"Perimetro = {perimeter:.1f}")
+else:
+    area = ((A + B) * C) / 2
+    print(f"Area = {area:.1f}")
 
-sorted_values = sorted([X, Y, Z])
-
-for value in sorted_values:
-    print(value)
-print("\n")
-
-for value in [X, Y, Z]:
     print(value)
