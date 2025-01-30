@@ -11,7 +11,7 @@ const markHigherBMI = markBMI > johnBMI
 console.log("Mark's BMI:", markBMI);
 console.log("John's BMI:", johnBMI);
 console.log("Does Mark have a higher BMI than John?", markHigherBMI);
-*/
+
 
 const matchDolphin1 = 96
 const matchDolphin2 = 108
@@ -31,3 +31,6 @@ if (scoreDolphin > scoreKoalas){
 } else {
     console.log('Both win the trophy')
 }
+*/
+
+console.log('practice done')
