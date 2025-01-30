@@ -1,8 +1,5 @@
-A, B, C = map(float, input().split())
-
-if A + B > C and A + C > B and B + C > A:
-    perimeter = A + B + C
-    print(f"Perimetro = {perimeter:.1f}")
+a,b=map(int, input().split())
+if (a%b==0)or(b%a==0):
+    print("Sao Multiplos")
 else:
-    area = ((A + B) * C) / 2
-    print(f"Area = {area:.1f}")
+    print("Nao sao Multiplos")
