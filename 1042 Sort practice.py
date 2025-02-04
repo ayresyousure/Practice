@@ -1,12 +1,25 @@
-values = input().split(' ')
-
-X, Y, Z = map(int, values)
-
-sorted_values = sorted([X, Y, Z])
-
-for value in sorted_values:
-    print(value)
-print("\n")
-
-for value in [X, Y, Z]:
-    print(value)
+a,b,c=list(map(float,input().split()))
+if(a < b):
+    temp = a
+    a = b
+    b = temp
+if(b < c):
+    temp = b
+    b = c
+    c = temp
+if(a < b):
+    temp = a
+    a = b
+    b = temp
+if(a>=(b+c)):
+    print("NAO FORMA TRIANGULO")
+elif(a*a == (b*b+c*c)):
+     print("TRIANGULO RETANGULO")
+elif(a * a > (b*b+ c*c)):
+    print("TRIANGULO OBTUSANGULO")
+elif(a*a<(b*b + c*c)):
+    print("TRIANGULO ACUTANGULO")
+if(a == b and b == c):
+        print("TRIANGULO EQUILATERO")
+elif(a == b or b == c):
+        print("TRIANGULO ISOSCELES")
