@@ -1,5 +1,6 @@
-a,b=map(int, input().split())
-if (a%b==0)or(b%a==0):
-    print("Sao Multiplos")
+a,b=list(map(int,input().split()))
+if(a<b):
+    time=b-a
 else:
-    print("Nao sao Multiplos")
+    time=b+24-a
+print(f"O JOGO DUROU {time} HORA(S)")
